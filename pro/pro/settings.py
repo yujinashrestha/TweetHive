@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-2b1ee=%e)!8p64mb*j4&+d255rtubs7q#t!!y0@+rwni6)xr!6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['TweetHive.pythonanywhere.com']
 
 
 # Application definition
