@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-2b1ee=%e)!8p64mb*j4&+d255rtubs7q#t!!y0@+rwni6)xr!6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['TweetHive.pythonanywhere.com']
+ALLOWED_HOSTS = ['yujina.pythonanywhere.com', 'www.tweethive.com']
 
 
 # Application definition
@@ -126,8 +126,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-STATIC_URL='/static/'
-STATIC_DIRS=[os.path.join(BASE_DIR, 'static')]
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # collectstatic will gather files here
 
 LOGIN_URL='/accounts/login'
 LOGIN_REDIRECT_URL='/tweet/'
